@@ -3,6 +3,13 @@ from django.http import HttpResponse,JsonResponse
 from .models import *
 import json
 
+# from django.views.generic import CreateView
+
+# class SignUpView(CreateView):
+#     form_class = UserCreationForm
+#     success_url = reverse_lazy("login")
+#     template_name = "app/signup.html"
+
 def home(request):
     if request.user.is_authenticated:
         customer =  request.user.customer
