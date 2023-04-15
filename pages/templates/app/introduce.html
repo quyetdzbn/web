@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link href="{%static 'app/css/style1.css' %} " rel="stylesheet"  href="style1.css"/>
+	<title>test</title>
+</head>
+<body>
+	<header>
+	<img src=" app/images/banner1.png" alt="">
+</header>
+
+<nav>
+	<div class="container">
+	<ul>
+		<li><a href=""><img style="width:150px" src=" {% static 'app/images/Neel.png' %} " width="70" height="70" alt=""></a></li>
+		<li><a href="">Hà Nội<i class="fa-thin fa-square-chevron-down"></i></a></li>
+		<li><a href=""></a> <form class="d-flex" role="search" method =POST action="{% url 'search' %}">
+			{% csrf_token %}
+			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="searched">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		  </form></li>	
+		<li><a href=""></a><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></li>
+		<li><a href="">Lịch sử đơn hàng</a></li>
+		<li><a href=""><span></span>Mua thẻ nạp ngay!</a></li>
+		<li><a href="">24h Công Nghệ</a></li>
+		<li><a href="">Đăng nhập</a></li>
+		<li><a href="">Đăng kí</a></li>
+	</ul>
+</div>
+</nav>
+<section class="menu-bar">
+	<div class="container">
+	<div class="menu-bar-content">
+		<ul>
+			<li><a href=""><i class="fa-solid fa-headphones"></i> Tai nghe</a></li>
+			<li><a href=""><i class="fa-solid fa-computer-mouse"></i> Chuột máy tính</a></li>
+			<li><a href=""><i class="fa-solid fa-keyboard"></i> Bàn phím</a></li>
+			<li><a href=""><i class="fa-sharp fa-solid fa-mobile-button"></i> Ốp điện thoại</a></li>
+			<li><a href=""><i class="fa-brands fa-usb"></i> USB</a></li>
+			<li><a href=""></a></li>
+		</ul>
+	</div>	
+	</div>
+</section>
+<!-- slide -->
+
+
+<!-- <section class="slider">
+	<div class="container">
+		<div class="slider-content">
+			<div class= "slider-content-left">
+				<div class="slider-content-left-top">
+				<img src="app/images/Neel.png" alt="">
+				</div>
+				</div class="slider-content-left-bottom">
+				</div>
+		</div>
+	</div>
+</section> -->
+</body>
+</html>
