@@ -1,0 +1,55 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>  </title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-with, initial-scale=1">
+      <link rel="stylesheet" href="">
+  </head>
+  <body>
+    {% block pay %}
+    <style type="text/css">
+      .contain-payment{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+      }
+      .btn-closess{
+        background-color: #3f3f3f;
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+	</style>
+</head>
+<body >
+  <div class="contain-payment">
+    <img src="../../static/app/images/check-svgrepo-com (1).svg" alt="anh ">
+    <h1 style="color: #387f24;">Thanh toán thành công</h1>
+    <p>Đơn hàng của {{form.username}} đã được thanh toán chúng tôi sẽ sớm giao hành cho bạn</p>
+    <div style="flex: 2">
+      <a
+        class="btn btn-outline-dark"
+        href="{% url 'home' %}"
+        style="border-radius: 5px" 
+        >Đóng</a
+      >
+    </div>
+  </div>
+
+</body>
+
+    {% endblock pay %}
+  
+
+</html>

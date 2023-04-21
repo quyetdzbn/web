@@ -47,6 +47,9 @@ def logoutPage(request):
 def introduce(request):
     return render(request,'app/introduce.html')
 
+def pay(request):
+    return render(request,'app/pay.html')
+
 def search(request):
     if request.method=="POST":
         searched = request.POST["searched"]

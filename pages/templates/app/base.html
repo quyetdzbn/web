@@ -56,13 +56,13 @@
 
 <nav >
 	<div class="container-fluid">
-	<ul>
+	<ul style="margin: 0;">
 		<li><a  href="{% url 'home' %}"><img style="margin-right:30px" src=" {% static 'app/images/Neel.png' %} " width="70" height="70" alt="">Trang chủ</a></li>
 		<li><a href="">Hà Nội<i class="fa-thin fa-square-chevron-down"></i></a></li>
 		<li><a href=""></a> <form class="d-flex" role="search" method =POST action="{% url 'search' %}">
 			{% csrf_token %}
-			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="searched">
-			<button class="btn btn-outline-success" type="submit">Search</button>
+			<input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search" name="searched">
+			<button style="    color: white;border: 1px solid;" class="btn btn-outline-success" type="submit">Search</button>
 		  </form></li>	
 		<!-- <li><a href=""></a><button><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</button></li> -->
 		<li><a href="">Lịch sử đơn hàng</a></li>
@@ -112,24 +112,24 @@
 {% block cart_content %}{% endblock cart_content %}
 {% block content_checkout %}{% endblock content_checkout %}
 {% block register %}{% endblock register %}
+{% block pay %}{% endblock pay %}
 <!-- footer-->
 <br>
 <br><br><br>
+<br><br><br><br>
 <footer style="background-image: url('../../static/app/images/banner/baner_footer2.jpg');width: 100%;" >
   <div class="container">
       <div class="footer-top">
           <div class="row">
-              <div class="col-md-6 col-lg-3 about-footer">
-                  <h3>Công ty cổ phần PTIT</h3>
-                  <ul>
-                      <li><a href="tel:(010) 1234 4321"><i class="fas fa-phone fa-flip-horizontal"></i>(010) 1234 4321</a></li>
-                      <li><i class="fas fa-map-marker-alt"></i>
-                          Hà Nội,
-                          <br/>Hà Đông,
-                          <br/>Mỗ Lao
-                      </li>
-                  </ul>
-                  <a href="" class="btn red-btn">Book Now</a>
+              <div class="col-md-4 col-lg-3 about-footer">
+                <h4>Trang chủ</h4>
+                      <br/>Liên hệ
+                      <br/>Địa chỉ
+                      <br/>Blog
+                      <br/>
+                
+                    <br/>
+                 
               </div>
               <!-- <div class="col-md-6 col-lg-2 page-more-info">
                   <div class="footer-title">
@@ -145,16 +145,24 @@
 
               <div class="col-md-6 col-lg-3 page-more-info">
                   <div class="footer-title">
-                      <h4>Kết Nối</h4>
+                    <ul>
+                        <h2>Công ty cổ phần PTIT</h2>
+                        <li><a href="tel:(010) 1234 4321"><i class="fas fa-phone fa-flip-horizontal"></i>(010) 1234 4321</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i>
+                            Hà Nội,Hà Đông,Mỗ Lao
+                            <br/>Ptit confession
+                            <br/>
+                        </li>
+                    </ul>
                   </div>
-                  <ul>
+                  <!-- <ul>
                     <ul class="footer-social">
                         <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 
                     </ul>
-                  </ul>
+                  </ul> -->
               </div>
               <div class="col-md-6 col-lg-4 open-hours">
                   <div class="footer-title">
@@ -189,6 +197,7 @@
               <div class="col-sm-4">
                   <!-- <a href="">Privacy policy</a> -->
               </div>
+            
               <div class="col-sm-8">
                   <p>Lorem ipsum dolor sit amet @ 2023 All rights reserved</p>
               </div>
