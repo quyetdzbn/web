@@ -8,6 +8,7 @@ Với lý do này nhóm quyết định lựa chọn đề tài: Xây dựng Web
 
 CÔNG CỤ PHÁT TRIỂN
 Backend: Python Django
+
 Frontend: HTML/CSS, Bootstrap, JavaScript
 
 Hệ quản trị cơ sở dữ liệu: SQLite
