@@ -30,5 +30,6 @@ Xem lịch sử đặt hàng
 Chạy code
 Mở visual Studio Code 
 mở terminal và gõ dòng: git clone https://github.com/quyetdzbn/web.git
-gõ dòng:  python manage.py runserver và truy cập đường link http://127.0.0.1:8000/ để xem
+gõ dòng:  python manage.py runserver và truy cập đường link http://127.0.0.1:8000/ để xem 
+trang admin http://127.0.0.1:8000/admin/login/?next=/admin/
 
